@@ -1,0 +1,23 @@
+
+### `assets/favicon/favicon.svg`
+**Implementation Summary:** Lightweight SVG favicon featuring the "PA" initials in Champagne Gold against a Deep Emerald background, optimized for browser tabs.
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background: Deep Emerald with rounded corners -->
+  <rect width="100" height="100" rx="22" ry="22" fill="#0A4A3F" />
+  
+  <!-- Initials: PA in Champagne Gold, centered -->
+  <text 
+    x="50" 
+    y="68" 
+    font-family="Inter, Arial, sans-serif" 
+    font-size="52" 
+    font-weight="700" 
+    fill="#C79A2D" 
+    text-anchor="middle" 
+    letter-spacing="-2"
+  >
+    PA
+  </text>
+</svg>
