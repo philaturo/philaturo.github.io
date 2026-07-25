@@ -187,7 +187,7 @@
   box-shadow: var(--shadow-md);
 }
 
-/* Domain Cards */
+/* Domain Cards (Level 2 Content) */
 .domain-card {
   display: flex;
   flex-direction: column;
@@ -205,6 +205,7 @@
   font-size: 0.95rem;
   flex-grow: 1;
   margin: 0;
+  line-height: 1.5;
 }
 
 .domain-tech {
@@ -214,6 +215,32 @@
   margin-top: var(--space-xs);
   padding-top: var(--space-xs);
   border-top: 1px solid var(--divider);
+}
+
+/* Principle Cards (Level 3 Content) */
+.principle-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-sm);
+  transition: border-color var(--transition-base);
+}
+
+.principle-card:hover {
+  border-color: var(--brand-accent);
+}
+
+.principle-name {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--tracking-tight);
 }
 
 /* Initiative Cards */
