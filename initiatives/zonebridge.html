@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>ZoneBridge | Phil Aturo | Engineering Initiative</title>
+  <meta name="description" content="ZoneBridge explores distributed coordination, peer discovery, and transport abstraction for resilient local-first networking and edge communication.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://philaturo.github.io/initiatives/zonebridge.html">
+
+  <!-- Theme Color & Icons -->
+  <meta name="theme-color" content="#0B1220">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://philaturo.github.io/initiatives/zonebridge.html">
+  <meta property="og:title" content="ZoneBridge | Phil Aturo">
+  <meta property="og:description" content="Exploring distributed coordination, peer discovery, and transport abstraction for resilient edge communication.">
+  <meta property="og:image" content="https://philaturo.github.io/assets/images/social/social-preview.png">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://philaturo.github.io/initiatives/zonebridge.html">
+  <meta name="twitter:title" content="ZoneBridge | Phil Aturo">
+  <meta name="twitter:description" content="Exploring distributed coordination, peer discovery, and transport abstraction for resilient edge communication.">
+  <meta name="twitter:image" content="https://philaturo.github.io/assets/images/social/social-preview.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/pages/initiative.css">
+</head>
+<body class="initiative-page">
+
+  <!-- Dynamic Navigation Mount -->
+  <header id="nav-mount"></header>
+
+  <main>
+    <section id="initiative-header">
+      <div class="container">
+        <a href="../work.html" class="back-link reveal">&larr; Back to All Work</a>
+        <div class="initiative-hero reveal">
+          <h1>ZoneBridge</h1>
+          <div class="initiative-meta">
+            <span class="status-badge status-architecture">Architecture</span>
+            <span class="initiative-domains">Distributed Systems · Infrastructure Engineering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview">
+      <div class="container">
+        <h2 class="section-title reveal">Project Overview</h2>
+        <div class="reveal">
+          <p>ZoneBridge is a distributed infrastructure platform focused on local-first networking and edge communication. It provides a foundation for building decentralized applications that require resilient backend coordination without relying exclusively on centralized cloud infrastructure.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenge">
+      <div class="container">
+        <h2 class="section-title reveal">Engineering Challenge</h2>
+        <div class="reveal">
+          <p>The primary engineering problem involves maintaining reliable state synchronization and peer discovery across distributed environments where network conditions fluctuate. Restrictive NAT boundaries and unreliable connectivity often prevent edge nodes from communicating directly, requiring complex traversal techniques and robust consensus algorithms to ensure data consistency.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <div class="container">
+        <h2 class="section-title reveal">Architecture Overview</h2>
+        <div class="reveal">
+          <p>The architecture explores transport abstraction to decouple application logic from the underlying network protocols. By utilizing WebRTC for peer-to-peer connections and gRPC for backend coordination, the system dynamically routes traffic based on network availability. This allows edge devices to operate autonomously during network partitions and synchronize state once connectivity is restored.</p>
+          <div class="architecture-placeholder">
+            <span>Architecture Diagram Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="progress">
+      <div class="container">
+        <h2 class="section-title reveal">Current Progress</h2>
+        <div class="reveal">
+          <ul class="focus-list">
+            <li>Designed core transport abstraction layer</li>
+            <li>Designing basic peer discovery mechanisms</li>
+            <li>Researched WebRTC integration for NAT traversal</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="current-focus">
+      <div class="container">
+        <h2 class="section-title reveal">Current Focus</h2>
+        <div class="reveal">
+          <p>Currently focused on finalizing the ZoneBridge V2 architecture, specifically addressing distributed coordination protocols and conflict resolution strategies required for state synchronization across edge nodes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="container">
+        <h2 class="section-title reveal">Roadmap</h2>
+        <div class="reveal">
+          <ul class="focus-list">
+            <li>Finalize distributed coordination protocols</li>
+            <li>Implement state synchronization engine</li>
+            <li>Develop infrastructure automation tooling</li>
+            <li>Release Core SDK for edge integration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="technologies">
+      <div class="container">
+        <h2 class="section-title reveal">Technologies</h2>
+        <div class="reveal">
+          <div class="tech-group">
+            <span class="initiative-label">Backend</span>
+            <span class="initiative-tech">Go (Golang)</span>
+          </div>
+          <div class="tech-group">
+            <span class="initiative-label">Infrastructure</span>
+            <span class="initiative-tech">Docker · Linux</span>
+          </div>
+          <div class="tech-group">
+            <span class="initiative-label">Protocols</span>
+            <span class="initiative-tech">WebRTC · gRPC</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="repository">
+      <div class="container">
+        <h2 class="section-title reveal">Repository</h2>
+        <div class="reveal">
+          <a href="https://github.com/PhilAturo" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Source Code</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dynamic Footer Mount -->
+  <footer id="footer-mount"></footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script type="module" src="../js/app.js"></script>
+</body>
+</html>
