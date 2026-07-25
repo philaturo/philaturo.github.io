@@ -1,0 +1,35 @@
+/* =========================================
+   ERROR PAGE SPECIFIC STYLES
+   ========================================= */
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 60vh;
+  padding: var(--space-2xl) 0;
+}
+
+.error-code {
+  font-size: clamp(4rem, 15vw, 8rem);
+  font-family: var(--font-mono);
+  color: var(--brand-primary);
+  margin-bottom: var(--space-sm);
+  line-height: 1;
+}
+
+.error-title {
+  margin-bottom: var(--space-md);
+}
+
+.error-container .hero-actions {
+  justify-content: center;
+}
+
+.error-container .section-introduction {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
