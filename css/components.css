@@ -171,68 +171,79 @@
   font-size: 0.85rem;
 }
 
-/* Cards */
+/* Cards (Base) */
 .card {
-  background-color: var(--card);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)),
+    var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: var(--space-md);
+  padding: var(--space-lg); /* Increased spacing */
   transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
   box-shadow: var(--shadow-sm);
 }
 
 .card:hover {
-  border-color: var(--brand-accent);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  border-color: var(--divider); /* Slightly brighter border */
+  transform: translateY(-1px); /* Subtle elevation */
+  box-shadow: var(--shadow-md); /* Soft shadow */
 }
 
-/* Domain Cards (Level 2 Content) */
+/* Domain Cards (Tier 2) */
 .domain-card {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: var(--space-sm);
+  height: 100%;
 }
 
 .domain-name {
   margin: 0;
   color: var(--text-primary);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--tracking-tight);
 }
 
 .domain-description {
   color: var(--text-secondary);
   font-size: 0.95rem;
-  flex-grow: 1;
+  line-height: 1.6;
   margin: 0;
-  line-height: 1.5;
+  flex-grow: 1;
 }
 
-.domain-tech {
+.domain-footer {
+  display: block;
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
   color: var(--text-muted);
-  margin-top: var(--space-xs);
-  padding-top: var(--space-xs);
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
   border-top: 1px solid var(--divider);
 }
 
-/* Principle Cards (Level 3 Content) */
+/* Principle Cards (Tier 3) */
 .principle-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: var(--surface);
+  gap: var(--space-xs);
+  background: 
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)),
+    var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: var(--space-md) var(--space-sm);
+  padding: var(--space-lg) var(--space-md);
   transition: border-color var(--transition-base);
 }
 
 .principle-card:hover {
-  border-color: var(--brand-accent);
+  border-color: var(--divider);
 }
 
 .principle-name {
@@ -243,11 +254,19 @@
   letter-spacing: var(--tracking-tight);
 }
 
-/* Initiative Cards */
+.principle-description {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  max-width: 220px;
+}
+
+/* Initiative Cards (Tier 1) */
 .initiative-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-md);
+  gap: var(--space-lg); /* Increased grid rhythm */
 }
 
 .initiative-card {
@@ -332,7 +351,7 @@
 
 /* Research Cards */
 .research-grid {
-  gap: var(--space-md);
+  gap: var(--space-lg); /* Increased grid rhythm */
 }
 
 .research-card {
@@ -371,10 +390,12 @@
 }
 
 .writing-preview {
-  background-color: var(--card);
+  background: 
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)),
+    var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: var(--space-md);
+  padding: var(--space-lg); /* Increased spacing */
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
@@ -382,7 +403,7 @@
 }
 
 .writing-preview:hover {
-  border-color: var(--brand-accent);
+  border-color: var(--divider);
   transform: translateX(4px);
 }
 
@@ -461,7 +482,7 @@
 
 /* Contact Cards */
 .contact-grid {
-  gap: var(--space-md);
+  gap: var(--space-lg); /* Increased grid rhythm */
 }
 
 .contact-card {
@@ -469,6 +490,7 @@
   flex-direction: column;
   gap: 0.25rem;
   text-decoration: none;
+  justify-content: center;
 }
 
 .contact-label {
