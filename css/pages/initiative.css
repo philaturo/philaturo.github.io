@@ -1,0 +1,103 @@
+/* =========================================
+   INITIATIVE PAGE SPECIFIC STYLES
+   ========================================= */
+
+.back-link {
+  display: inline-block;
+  margin-bottom: var(--space-md);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  transition: color var(--transition-fast);
+}
+
+.back-link:hover {
+  color: var(--brand-accent);
+}
+
+.initiative-hero {
+  margin-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--divider);
+  padding-bottom: var(--space-lg);
+}
+
+.initiative-hero h1 {
+  margin-bottom: var(--space-sm);
+}
+
+.initiative-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.initiative-domains {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Architecture Placeholder */
+.architecture-placeholder {
+  margin-top: var(--space-md);
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.architecture-placeholder span {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Technology Grouping */
+.tech-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--divider);
+}
+
+.tech-group:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Ensure typography for lists matches about page */
+.initiative-page .focus-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-md) 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-sm);
+}
+
+.initiative-page .focus-list li {
+  position: relative;
+  padding-left: var(--space-md);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.initiative-page .focus-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: var(--brand-accent);
+  border-radius: 50%;
+}
