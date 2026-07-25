@@ -1,0 +1,103 @@
+/* =========================================
+   DESIGN TOKENS
+   ========================================= */
+
+:root {
+  /* Brand Colors */
+  --brand-primary: #0A4A3F;
+  --brand-secondary: #145C50;
+  --brand-accent: #1E7A69;
+
+  /* Premium Metallic Colors */
+  --gold-primary: #C79A2D;
+  --gold-secondary: #D4B15A;
+  --bronze: #8A6A2F;
+
+  /* Foundation Colors */
+  --bg-primary: #0B1220;
+  --bg-secondary: #111827;
+  --surface: #1A2435;
+  --card: #243244;
+
+  /* Typography Colors */
+  --text-primary: #F8F6F1;
+  --text-secondary: #D7DCE3;
+  --text-muted: #94A3B8;
+  --text-disabled: #64748B;
+
+  /* Border System */
+  --border: #334155;
+  --divider: #465468;
+
+  /* Semantic Colors */
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --info: #3B82F6;
+
+  /* Status Colors */
+  --status-research: #3B82F6;
+  --status-architecture: #C79A2D;
+  --status-prototype: #8B5CF6;
+  --status-mvp: #F59E0B;
+  --status-active: #1E7A69;
+  --status-beta: #06B6D4;
+  --status-production: #22C55E;
+  --status-maintenance: #64748B;
+  --status-archived: #475569;
+
+  /* Typography */
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Tracking */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.08em;
+
+  /* Spacing Scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.15);
+  --shadow-md: 0 8px 24px rgba(0,0,0,.18);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,.22);
+
+  /* Motion */
+  --transition-fast: 150ms var(--ease-standard);
+  --transition-base: 250ms var(--ease-in-out);
+  --ease-standard: ease;
+  --ease-in: ease-in;
+  --ease-out: ease-out;
+  --ease-in-out: ease-in-out;
+
+  /* Blur */
+  --blur-sm: 4px;
+  --blur-md: 12px;
+
+  /* Z-Index */
+  --z-navbar: 100;
+  --z-dropdown: 500;
+  --z-modal: 1000;
+  --z-tooltip: 1100;
+
+  /* Layout */
+  --max-width: 1140px;
+}
