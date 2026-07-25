@@ -1,6 +1,6 @@
 # Phil Aturo
 
-> **Building reliable software systems through thoughtful engineering.**
+> Building reliable software systems through thoughtful engineering.
 
 [![Status](https://img.shields.io/badge/status-active%20development-1E7A69?style=flat-square)](#)
 [![Platform](https://img.shields.io/badge/platform-GitHub%20Pages-0B1220?style=flat-square)](#)
@@ -8,119 +8,253 @@
 
 ---
 
-## Overview
+# Overview
 
-Welcome to my personal engineering portfolio.
+Welcome.
 
-This repository contains the source code, engineering documentation, and design specifications that power my professional portfolio website.
+This repository contains the source code, architecture documentation, and engineering specifications that power my personal portfolio website.
 
-Rather than serving as a traditional résumé, this portfolio documents my engineering journey through backend systems, distributed infrastructure, platform engineering, technical writing, and continuous learning.
+Rather than serving as a traditional résumé, this portfolio documents an ongoing engineering journey focused on building reliable software through thoughtful architecture, maintainable systems, and continuous learning.
 
-Every part of this portfolio is designed with the same principles that guide the software I build: thoughtful architecture, maintainability, reliability, and clear documentation.
+Every page, component, and document is intentionally designed using the same engineering principles that guide the software projects presented throughout the portfolio.
 
 ---
 
-## Engineering Philosophy
+# Engineering Philosophy
 
 Good engineering is quiet.
 
-It earns trust through consistency, reliability, and thoughtful execution—not through unnecessary complexity.
+It earns trust through reliability, consistency, and thoughtful execution—not unnecessary complexity.
 
-This philosophy guides every engineering decision represented throughout this portfolio.
-
----
-
-## What You'll Find
-
-This repository contains:
-
-- Source code for my personal portfolio website
-- Engineering design specifications
-- Architecture documentation
-- Design language and brand system
-- Technical writing foundation
-- Long-term portfolio evolution
-
-The portfolio itself is treated as an engineering project, where documentation drives implementation rather than the other way around.
-
----
-
-## Design Principles
-
-The portfolio follows an **Engineering Luxury** design philosophy.
-
-Core principles include:
+Throughout this portfolio I prioritize:
 
 - Reliability before novelty
 - Readability before decoration
-- Performance before complexity
+- Simplicity before abstraction
 - Accessibility by default
-- Documentation as engineering
+- Documentation before implementation
 - Long-term maintainability
-- Thoughtful architecture
-
-Every visual and technical decision exists to support these principles.
+- Continuous improvement
 
 ---
 
-## Development
+# Repository Contents
 
-The website is intentionally built as a modern static application.
+This repository contains:
 
-Goals include:
+- Portfolio website source code
+- Engineering architecture specifications
+- Design system documentation
+- Technical writing foundation
+- Engineering initiative pages
+- Shared UI component library
+- GitHub Pages deployment configuration
 
-- GitHub Pages compatible
-- Lightweight and fast
-- Responsive across devices
-- Accessible by default
-- Easy to maintain
-- Long-term sustainable
+The portfolio itself is treated as an engineering project where architecture and documentation guide implementation.
 
 ---
 
-## Connect
+# Technology Stack
 
-I'd be glad to connect for engineering discussions, collaboration, research, open source, or software engineering opportunities.
+The portfolio intentionally uses a lightweight, standards-based stack.
 
-**Portfolio**
+| Layer | Technology |
+|--------|------------|
+| Markup | HTML5 |
+| Styling | CSS3 |
+| Interaction | Vanilla JavaScript (ES Modules) |
+| Deployment | GitHub Pages |
+| Version Control | Git |
+| Documentation | Markdown |
 
-> Currently under development
+---
 
-**GitHub**
+# Repository Structure
+
+```text
+.
+├── index.html
+├── about.html
+├── work.html
+├── writing.html
+├── timeline.html
+├── contact.html
+│
+├── initiatives/
+│   ├── zonebridge.html
+│   ├── settara.html
+│   ├── meshguard.html
+│   ├── secure-notes.html
+│   └── wailsdeck.html
+│
+├── css/
+│   ├── tokens.css
+│   ├── typography.css
+│   ├── layout.css
+│   ├── components.css
+│   ├── utilities.css
+│   ├── animations.css
+│   └── pages/
+│
+├── js/
+│   ├── app.js
+│   ├── navigation.js
+│   └── footer.js
+│
+├── assets/
+├── docs/
+├── README.md
+└── LICENSE
+```
+
+---
+
+# Site Architecture
+
+```mermaid
+flowchart TD
+
+A[Homepage]
+A --> B[About]
+A --> C[Work]
+A --> D[Writing]
+A --> E[Timeline]
+A --> F[Contact]
+
+C --> G[ZoneBridge]
+C --> H[Settara]
+C --> I[MeshGuard]
+C --> J[Secure Notes API]
+C --> K[WailsDeck]
+```
+
+The navigation structure intentionally guides visitors from professional identity through engineering work, technical writing, project evolution, and opportunities for collaboration.
+
+---
+
+# Engineering Initiatives
+
+The portfolio currently highlights several long-term engineering initiatives.
+
+| Initiative | Primary Focus |
+|------------|---------------|
+| ZoneBridge | Distributed Systems & Edge Infrastructure |
+| Settara | Financial Infrastructure & Offline Settlement |
+| MeshGuard | DevSecOps & Infrastructure Resilience |
+| Secure Notes API | Secure Backend Engineering |
+| WailsDeck | Developer Tooling & Platform Engineering |
+
+Each initiative emphasizes engineering problems, architectural thinking, implementation progress, and future direction rather than simply showcasing completed software.
+
+---
+
+# Documentation-First Development
+
+This repository follows a documentation-first engineering workflow.
+
+```mermaid
+flowchart LR
+
+A[Requirements]
+--> B[Architecture Specifications]
+--> C[Design System]
+--> D[Implementation]
+--> E[Review]
+--> F[Refinement]
+```
+
+Implementation follows approved specifications rather than evolving organically.
+
+This approach improves consistency, maintainability, and long-term scalability.
+
+---
+
+# Design Principles
+
+The visual design follows an **Engineering Luxury** philosophy.
+
+Characteristics include:
+
+- Clean typography
+- Spacious layouts
+- Minimal visual noise
+- Consistent spacing system
+- Semantic HTML
+- Accessible interactions
+- Responsive layouts
+- Shared reusable components
+
+The objective is clarity—not decoration.
+
+---
+
+# Running Locally
+
+Clone the repository.
+
+```bash
+git clone https://github.com/PhilAturo/philaturo.github.io.git
+
+cd philaturo.github.io
+```
+
+Start a local development server.
+
+Python:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit:
+
+```
+http://localhost:8000
+```
+
+---
+
+# Connect
+
+Portfolio
+
+> GitHub Pages deployment in progress.
+
+GitHub
 
 https://github.com/PhilAturo
 
-**LinkedIn**
+LinkedIn
 
 https://www.linkedin.com/in/aturo-phil-4b2a122a7
 
-**Hashnode**
+Hashnode
 
 https://hashnode.com/@aturo-phil
 
-**X**
+X
 
 https://x.com/aturo_09
 
-**Bluesky**
+Bluesky
 
 https://bsky.app/profile/aturo-phil.bsky.social
 
-**Email**
+Email
 
 aturophil641@gmail.com
 
 ---
 
-## License
+# License
 
-The source code in this repository is licensed under the MIT License.
+The software contained within this repository is licensed under the MIT License.
 
-Unless otherwise stated, all written content, documentation, branding, and portfolio assets remain the intellectual property of Phil Aturo.
+Unless explicitly stated otherwise, all written content, engineering documentation, branding, and portfolio assets remain the intellectual property of Phil Aturo.
 
 ---
 
-## Engineering Statement
+# Engineering Statement
 
 Software changes.
 
@@ -128,7 +262,7 @@ Technologies evolve.
 
 Engineering principles endure.
 
-This portfolio documents an ongoing commitment to building reliable software systems through thoughtful architecture, disciplined engineering, and continuous learning.
+This portfolio represents an ongoing commitment to building reliable software systems through thoughtful architecture, disciplined engineering, and continuous learning.
 
 ---
 
