@@ -12,45 +12,11 @@
 
 Welcome.
 
-This repository contains the source code, architecture documentation, and engineering specifications that power my personal portfolio website.
+This repository contains the source code for my personal portfolio website.
 
-Rather than serving as a traditional résumé, this portfolio documents an ongoing engineering journey focused on building reliable software through thoughtful architecture, maintainable systems, and continuous learning.
+This portfolio preserves an ongoing engineering journey focused on building reliable software through thoughtful architecture, maintainable systems, and continuous learning.
 
 Every page, component, and document is intentionally designed using the same engineering principles that guide the software projects presented throughout the portfolio.
-
----
-
-# Engineering Philosophy
-
-Good engineering is quiet.
-
-It earns trust through reliability, consistency, and thoughtful execution—not unnecessary complexity.
-
-Throughout this portfolio I prioritize:
-
-- Reliability before novelty
-- Readability before decoration
-- Simplicity before abstraction
-- Accessibility by default
-- Documentation before implementation
-- Long-term maintainability
-- Continuous improvement
-
----
-
-# Repository Contents
-
-This repository contains:
-
-- Portfolio website source code
-- Engineering architecture specifications
-- Design system documentation
-- Technical writing foundation
-- Engineering initiative pages
-- Shared UI component library
-- GitHub Pages deployment configuration
-
-The portfolio itself is treated as an engineering project where architecture and documentation guide implementation.
 
 ---
 
@@ -106,85 +72,6 @@ The portfolio intentionally uses a lightweight, standards-based stack.
 ├── README.md
 └── LICENSE
 ```
-
----
-
-# Site Architecture
-
-```mermaid
-flowchart TD
-
-A[Homepage]
-A --> B[About]
-A --> C[Work]
-A --> D[Writing]
-A --> E[Timeline]
-A --> F[Contact]
-
-C --> G[ZoneBridge]
-C --> H[Settara]
-C --> I[MeshGuard]
-C --> J[Secure Notes API]
-C --> K[WailsDeck]
-```
-
-The navigation structure intentionally guides visitors from professional identity through engineering work, technical writing, project evolution, and opportunities for collaboration.
-
----
-
-# Engineering Initiatives
-
-The portfolio currently highlights several long-term engineering initiatives.
-
-| Initiative | Primary Focus |
-|------------|---------------|
-| ZoneBridge | Distributed Systems & Edge Infrastructure |
-| Settara | Financial Infrastructure & Offline Settlement |
-| MeshGuard | DevSecOps & Infrastructure Resilience |
-| Secure Notes API | Secure Backend Engineering |
-| WailsDeck | Developer Tooling & Platform Engineering |
-
-Each initiative emphasizes engineering problems, architectural thinking, implementation progress, and future direction rather than simply showcasing completed software.
-
----
-
-# Documentation-First Development
-
-This repository follows a documentation-first engineering workflow.
-
-```mermaid
-flowchart LR
-
-A[Requirements]
---> B[Architecture Specifications]
---> C[Design System]
---> D[Implementation]
---> E[Review]
---> F[Refinement]
-```
-
-Implementation follows approved specifications rather than evolving organically.
-
-This approach improves consistency, maintainability, and long-term scalability.
-
----
-
-# Design Principles
-
-The visual design follows an **Engineering Luxury** philosophy.
-
-Characteristics include:
-
-- Clean typography
-- Spacious layouts
-- Minimal visual noise
-- Consistent spacing system
-- Semantic HTML
-- Accessible interactions
-- Responsive layouts
-- Shared reusable components
-
-The objective is clarity—not decoration.
 
 ---
 
