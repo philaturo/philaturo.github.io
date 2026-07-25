@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- Primary Meta Tags -->
-  <title>ZoneBridge | Phil Aturo | Engineering Initiative</title>
-  <meta name="description" content="ZoneBridge explores distributed coordination, peer discovery, and transport abstraction for resilient local-first networking and edge communication.">
+  <title>ZoneBridge | Phil Aturo | Platform Engineering Initiative</title>
+  <meta name="description" content="ZoneBridge is a collaborative engineering platform built for the Zone01 Kisumu community, providing infrastructure for technical collaboration, knowledge sharing, mentorship, audits, hackathons, and open-source development.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://philaturo.github.io/initiatives/zonebridge.html">
 
@@ -15,25 +15,25 @@
   <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
   <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://philaturo.github.io/initiatives/zonebridge.html">
   <meta property="og:title" content="ZoneBridge | Phil Aturo">
-  <meta property="og:description" content="Exploring distributed coordination, peer discovery, and transport abstraction for resilient edge communication.">
+  <meta property="og:description" content="A production-grade collaborative engineering platform for the Zone01 Kisumu community.">
   <meta property="og:image" content="https://philaturo.github.io/assets/images/social/social-preview.png">
 
-  <!-- Twitter / X Cards -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://philaturo.github.io/initiatives/zonebridge.html">
   <meta name="twitter:title" content="ZoneBridge | Phil Aturo">
-  <meta name="twitter:description" content="Exploring distributed coordination, peer discovery, and transport abstraction for resilient edge communication.">
+  <meta name="twitter:description" content="A production-grade collaborative engineering platform for the Zone01 Kisumu community.">
   <meta name="twitter:image" content="https://philaturo.github.io/assets/images/social/social-preview.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
+
   <!-- Styles -->
   <link rel="stylesheet" href="../css/tokens.css">
   <link rel="stylesheet" href="../css/typography.css">
@@ -43,126 +43,227 @@
   <link rel="stylesheet" href="../css/animations.css">
   <link rel="stylesheet" href="../css/pages/initiative.css">
 </head>
+
 <body class="initiative-page">
 
-  <!-- Dynamic Navigation Mount -->
-  <header id="nav-mount"></header>
+<header id="nav-mount"></header>
 
-  <main>
-    <section id="initiative-header">
-      <div class="container">
-        <a href="../work.html" class="back-link reveal">&larr; Back to All Work</a>
-        <div class="initiative-hero reveal">
-          <h1>ZoneBridge</h1>
-          <div class="initiative-meta">
-            <span class="status-badge status-architecture">Architecture</span>
-            <span class="initiative-domains">Distributed Systems · Infrastructure Engineering</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<main>
 
-    <section id="overview">
-      <div class="container">
-        <h2 class="section-title reveal">Project Overview</h2>
-        <div class="reveal">
-          <p>ZoneBridge is a distributed infrastructure platform focused on local-first networking and edge communication. It provides a foundation for building decentralized applications that require resilient backend coordination without relying exclusively on centralized cloud infrastructure.</p>
-        </div>
-      </div>
-    </section>
+<section id="initiative-header">
+<div class="container">
 
-    <section id="challenge">
-      <div class="container">
-        <h2 class="section-title reveal">Engineering Challenge</h2>
-        <div class="reveal">
-          <p>The primary engineering problem involves maintaining reliable state synchronization and peer discovery across distributed environments where network conditions fluctuate. Restrictive NAT boundaries and unreliable connectivity often prevent edge nodes from communicating directly, requiring complex traversal techniques and robust consensus algorithms to ensure data consistency.</p>
-        </div>
-      </div>
-    </section>
+<a href="../work.html" class="back-link reveal">
+&larr; Back to All Work
+</a>
 
-    <section id="architecture">
-      <div class="container">
-        <h2 class="section-title reveal">Architecture Overview</h2>
-        <div class="reveal">
-          <p>The architecture explores transport abstraction to decouple application logic from the underlying network protocols. By utilizing WebRTC for peer-to-peer connections and gRPC for backend coordination, the system dynamically routes traffic based on network availability. This allows edge devices to operate autonomously during network partitions and synchronize state once connectivity is restored.</p>
-          <div class="architecture-placeholder">
-            <span>Architecture Diagram Coming Soon</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="initiative-hero reveal">
 
-    <section id="progress">
-      <div class="container">
-        <h2 class="section-title reveal">Current Progress</h2>
-        <div class="reveal">
-          <ul class="focus-list">
-            <li>Designed core transport abstraction layer</li>
-            <li>Designing basic peer discovery mechanisms</li>
-            <li>Researched WebRTC integration for NAT traversal</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<h1>ZoneBridge</h1>
 
-    <section id="current-focus">
-      <div class="container">
-        <h2 class="section-title reveal">Current Focus</h2>
-        <div class="reveal">
-          <p>Currently focused on finalizing the ZoneBridge V2 architecture, specifically addressing distributed coordination protocols and conflict resolution strategies required for state synchronization across edge nodes.</p>
-        </div>
-      </div>
-    </section>
+<div class="initiative-meta">
+<span class="status-badge status-active">Active Development</span>
+<span class="initiative-domains">
+Platform Engineering · Distributed Systems · Backend Engineering
+</span>
+</div>
 
-    <section id="roadmap">
-      <div class="container">
-        <h2 class="section-title reveal">Roadmap</h2>
-        <div class="reveal">
-          <ul class="focus-list">
-            <li>Finalize distributed coordination protocols</li>
-            <li>Implement state synchronization engine</li>
-            <li>Develop infrastructure automation tooling</li>
-            <li>Release Core SDK for edge integration</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+</div>
+</div>
+</section>
 
-    <section id="technologies">
-      <div class="container">
-        <h2 class="section-title reveal">Technologies</h2>
-        <div class="reveal">
-          <div class="tech-group">
-            <span class="initiative-label">Backend</span>
-            <span class="initiative-tech">Go (Golang)</span>
-          </div>
-          <div class="tech-group">
-            <span class="initiative-label">Infrastructure</span>
-            <span class="initiative-tech">Docker · Linux</span>
-          </div>
-          <div class="tech-group">
-            <span class="initiative-label">Protocols</span>
-            <span class="initiative-tech">WebRTC · gRPC</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<section id="overview">
+<div class="container">
 
-    <section id="repository">
-      <div class="container">
-        <h2 class="section-title reveal">Repository</h2>
-        <div class="reveal">
-          <a href="https://github.com/PhilAturo" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Source Code</a>
-        </div>
-      </div>
-    </section>
-  </main>
+<h2 class="section-title reveal">
+Project Overview
+</h2>
 
-  <!-- Dynamic Footer Mount -->
-  <footer id="footer-mount"></footer>
+<div class="reveal">
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script type="module" src="../js/app.js"></script>
+<p>
+ZoneBridge is a collaborative engineering platform designed for the Zone01 Kisumu community. The platform strengthens project-based learning by providing a centralized environment for technical collaboration, community building, knowledge sharing, mentorship, audit coordination, hackathons, bootcamps, and open-source initiatives.
+</p>
+
+<p>
+Rather than replacing the official Zone01 learning platform, ZoneBridge extends the surrounding engineering ecosystem by preserving technical knowledge, improving collaboration, and providing production-grade infrastructure that supports long-term community growth.
+</p>
+
+</div>
+</div>
+</section>
+
+<section id="challenge">
+<div class="container">
+
+<h2 class="section-title reveal">
+Engineering Challenge
+</h2>
+
+<div class="reveal">
+
+<p>
+Developer communities continuously generate valuable engineering knowledge through projects, audits, technical discussions, bootcamps, and collaborative software development. Much of this knowledge becomes fragmented across repositories, messaging platforms, and personal notes, making it difficult for future developers to discover and build upon previous work.
+</p>
+
+<p>
+ZoneBridge addresses this challenge by providing a modular platform that preserves institutional knowledge while enabling scalable collaboration through production-grade engineering practices and maintainable system architecture.
+</p>
+
+</div>
+</div>
+</section>
+
+<section id="architecture">
+<div class="container">
+
+<h2 class="section-title reveal">
+Architecture Overview
+</h2>
+
+<div class="reveal">
+
+<p>
+ZoneBridge V2 follows a documentation-first, modular monolith architecture built with Go. The platform emphasizes deterministic constructors, dependency injection, structured observability, comprehensive testing, explicit package boundaries, and production-ready engineering standards. Every architectural decision is documented before implementation, ensuring maintainability as the platform evolves.
+</p>
+
+<div class="architecture-placeholder">
+<span>
+Production architecture documentation available in the repository.
+</span>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="progress">
+<div class="container">
+
+<h2 class="section-title reveal">
+Current Progress
+</h2>
+
+<div class="reveal">
+
+<ul class="focus-list">
+<li>Completed production-grade platform bootstrap architecture.</li>
+<li>Established engineering standards and documentation workflow.</li>
+<li>Implemented application lifecycle, configuration, logging, middleware, and graceful shutdown foundation.</li>
+<li>Building Identity & Access Management as the next platform milestone.</li>
+</ul>
+
+</div>
+</div>
+</section>
+
+<section id="current-focus">
+<div class="container">
+
+<h2 class="section-title reveal">
+Current Focus
+</h2>
+
+<div class="reveal">
+
+<p>
+Current development focuses on implementing ZoneBridge V2 while maintaining strict architectural boundaries established during the platform bootstrap milestone. Every feature follows documentation-first engineering, comprehensive testing, dependency injection, structured observability, and production-ready implementation standards.
+</p>
+
+</div>
+</div>
+</section>
+
+<section id="roadmap">
+<div class="container">
+
+<h2 class="section-title reveal">
+Roadmap
+</h2>
+
+<div class="reveal">
+
+<ul class="focus-list">
+<li>Identity & Access Management</li>
+<li>Communities Platform</li>
+<li>Knowledge Hub</li>
+<li>Audit Coordination</li>
+<li>Mentorship Platform</li>
+<li>Events & Hackathons</li>
+<li>Real-Time Collaboration</li>
+<li>Search & Discovery</li>
+<li>Production Deployment & Operations</li>
+</ul>
+
+</div>
+</div>
+</section>
+
+<section id="technologies">
+<div class="container">
+
+<h2 class="section-title reveal">
+Technologies
+</h2>
+
+<div class="reveal">
+
+<div class="tech-group">
+<span class="initiative-label">Backend</span>
+<span class="initiative-tech">Go (Golang)</span>
+</div>
+
+<div class="tech-group">
+<span class="initiative-label">Frontend</span>
+<span class="initiative-tech">React · TypeScript</span>
+</div>
+
+<div class="tech-group">
+<span class="initiative-label">Database</span>
+<span class="initiative-tech">PostgreSQL</span>
+</div>
+
+<div class="tech-group">
+<span class="initiative-label">Infrastructure</span>
+<span class="initiative-tech">Docker · Cloudflare · Oracle Cloud</span>
+</div>
+
+<div class="tech-group">
+<span class="initiative-label">Development</span>
+<span class="initiative-tech">GitHub Actions · Linux</span>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="repository">
+<div class="container">
+
+<h2 class="section-title reveal">
+Repository
+</h2>
+
+<div class="reveal">
+
+<a
+href="https://github.com/philaturo/zonebridge-platform"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-primary">
+View Source Code
+</a>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<footer id="footer-mount"></footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script type="module" src="../js/app.js"></script>
+
 </body>
 </html>
