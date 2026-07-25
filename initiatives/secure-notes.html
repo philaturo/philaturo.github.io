@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Secure Notes API | Phil Aturo | Engineering Initiative</title>
+  <meta name="description" content="A production-grade secure backend reference implementation in Go exploring security-by-design, Clean Architecture, authentication, authorization, and modern backend engineering.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://philaturo.github.io/initiatives/secure-notes.html">
+
+  <!-- Theme Color & Icons -->
+  <meta name="theme-color" content="#0B1220">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://philaturo.github.io/initiatives/secure-notes.html">
+  <meta property="og:title" content="Secure Notes API | Phil Aturo">
+  <meta property="og:description" content="A production-grade secure backend reference implementation exploring security-by-design and trustworthy backend engineering.">
+  <meta property="og:image" content="https://philaturo.github.io/assets/images/social/social-preview.png">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://philaturo.github.io/initiatives/secure-notes.html">
+  <meta name="twitter:title" content="Secure Notes API | Phil Aturo">
+  <meta name="twitter:description" content="A production-grade secure backend reference implementation exploring security-by-design and trustworthy backend engineering.">
+  <meta name="twitter:image" content="https://philaturo.github.io/assets/images/social/social-preview.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/pages/initiative.css">
+</head>
+<body class="initiative-page">
+
+  <!-- Dynamic Navigation Mount -->
+  <header id="nav-mount"></header>
+
+  <main>
+    <section id="initiative-header">
+      <div class="container">
+        <a href="../work.html" class="back-link reveal">&larr; Back to All Work</a>
+        <div class="initiative-hero reveal">
+          <h1>Secure Notes API</h1>
+          <div class="initiative-meta">
+            <span class="status-badge status-prototype">Prototype</span>
+            <span class="initiative-domains">Backend Engineering · Secure Software Engineering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview">
+      <div class="container">
+        <h2 class="section-title reveal">Project Overview</h2>
+        <div class="reveal">
+          <p>Secure Notes API is a production-grade secure backend reference implementation built to explore how modern backend systems should be engineered when security, maintainability, and operational readiness are treated as architectural concerns from the outset. Using a simple note management domain, the project demonstrates authentication, authorization, secure API design, and production-oriented engineering practices that extend far beyond a single application.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenge">
+      <div class="container">
+        <h2 class="section-title reveal">Engineering Challenge</h2>
+        <div class="reveal">
+          <p>Modern software systems repeatedly reimplement authentication, authorization, validation, auditability, and other security capabilities across every new application. Secure Notes API explores how these responsibilities can be designed into the architecture from the beginning, reducing complexity while establishing a secure, maintainable, and trustworthy backend foundation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <div class="container">
+        <h2 class="section-title reveal">Architecture Overview</h2>
+        <div class="reveal">
+          <p>The system follows Clean Architecture to separate business rules from infrastructure and delivery mechanisms. HTTP handlers coordinate application use cases, domain logic remains independent from frameworks, and infrastructure components provide implementations for persistence, authentication, logging, and configuration. This separation keeps the core application testable, maintainable, and adaptable as the project evolves.</p>
+          <div class="architecture-placeholder">
+            <span>Architecture Diagram Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+        <section id="progress">
+      <div class="container">
+        <h2 class="section-title reveal">Current Progress</h2>
+        <div class="reveal">
+          <ul class="focus-list">
+            <li>Establishing the project's Clean Architecture foundation</li>
+            <li>Designing secure authentication and authorization workflows</li>
+            <li>Building the secure Notes API as the project's reference implementation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="current-focus">
+      <div class="container">
+        <h2 class="section-title reveal">Current Focus</h2>
+        <div class="reveal">
+          <p>Current development is focused on establishing a production-ready engineering foundation through Clean Architecture, secure authentication, repository abstractions, structured project organization, and automated development workflows before expanding functionality. The emphasis is on building maintainable systems that demonstrate secure backend engineering practices rather than simply delivering features.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="container">
+        <h2 class="section-title reveal">Roadmap</h2>
+        <div class="reveal">
+          <ul class="focus-list">
+            <li>Complete secure authentication and authorization</li>
+            <li>Implement production-ready CRUD operations</li>
+            <li>Expand automated testing and quality assurance</li>
+            <li>Introduce observability, deployment automation, and production hardening</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="technologies">
+      <div class="container">
+        <h2 class="section-title reveal">Technologies</h2>
+        <div class="reveal">
+          <div class="tech-group">
+            <span class="initiative-label">Language</span>
+            <span class="initiative-tech">Go (Golang)</span>
+          </div>
+
+          <div class="tech-group">
+            <span class="initiative-label">Persistence</span>
+            <span class="initiative-tech">PostgreSQL</span>
+          </div>
+
+          <div class="tech-group">
+            <span class="initiative-label">Architecture</span>
+            <span class="initiative-tech">Clean Architecture · REST</span>
+          </div>
+
+          <div class="tech-group">
+            <span class="initiative-label">Security</span>
+            <span class="initiative-tech">JWT · bcrypt · Secure API Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="repository">
+      <div class="container">
+        <h2 class="section-title reveal">Repository</h2>
+        <div class="reveal">
+          <a href="https://github.com/PhilAturo" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Repository</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dynamic Footer Mount -->
+  <footer id="footer-mount"></footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script type="module" src="../js/app.js"></script>
+</body>
+</html>
