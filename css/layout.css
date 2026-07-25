@@ -2,16 +2,22 @@
    LAYOUT & GRID
    ========================================= */
 
+/* Sticky Footer Architecture */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 .container {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--space-md);
-}
-
-/* Ensure short pages maintain proper footer positioning */
-main {
-  min-height: 100vh;
 }
 
 section {
@@ -21,6 +27,11 @@ section {
 
 section:first-of-type {
   padding-top: var(--space-xl);
+}
+
+/* Improve vertical rhythm inside sections */
+section p:last-child {
+  margin-bottom: 0;
 }
 
 /* Grid Systems */
@@ -36,10 +47,51 @@ section:first-of-type {
   gap: var(--space-md);
 }
 
+/* Hero Layout */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  object-fit: cover;
+  box-shadow: var(--shadow-md);
+}
+
+/* Footer Layout */
+.footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: var(--space-xl) 0;
+  margin-top: var(--space-2xl);
+}
+
+.footer-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 900px) {
   .grid-3 {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-image {
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
