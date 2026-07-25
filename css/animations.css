@@ -1,3 +1,686 @@
+### 1. `css/components.css`
+
+**Summary of modifications:**
+- **Hero Note Width:** Replaced `max-width: 90%;` with `max-width: 42rem;` for consistent scaling on large displays.
+- **Card Transitions:** Replaced generic `transition: all ...` with explicit properties (`border-color`, `transform`, `box-shadow`) to prevent layout recalculations.
+- **Initiative Hover:** Reduced hover transform from `-3px` to `-2px` to align with engineering precision.
+- Applied explicit transitions to `.btn` and `.writing-preview` as well for consistency.
+- Kept footer components and contact card word-breaks as requested.
+
+```css
+/* =========================================
+   COMPONENTS
+   ========================================= */
+
+/* Navigation */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgba(17, 24, 39, 0.8);
+  border-bottom: 1px solid var(--border);
+  z-index: var(--z-navbar);
+  backdrop-filter: blur(var(--blur-md));
+  -webkit-backdrop-filter: blur(var(--blur-md));
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+}
+
+.nav-brand {
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  letter-spacing: var(--tracking-tight);
+}
+
+.nav-menu {
+  display: flex;
+  gap: var(--space-md);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: var(--fw-medium);
+  transition: color var(--transition-fast);
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--brand-accent);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-secondary);
+    flex-direction: column;
+    padding: var(--space-md);
+    gap: var(--space-sm);
+    border-bottom: 1px solid var(--border);
+    display: none;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+}
+
+/* Hero Components */
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.hero-note {
+  color: var(--text-muted);
+  margin-top: var(--space-md);
+  font-size: 0.9rem;
+  max-width: 42rem;
+}
+
+/* Content Typography */
+.section-introduction {
+  margin-bottom: var(--space-lg);
+  max-width: 800px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  font-weight: var(--fw-medium);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color var(--transition-base), border-color var(--transition-base), color var(--transition-base);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: var(--text-primary);
+  border-color: var(--brand-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-secondary);
+  border-color: var(--brand-secondary);
+  color: var(--text-primary);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+
+.btn-secondary:hover {
+  background-color: var(--surface);
+  border-color: var(--divider);
+  color: var(--text-primary);
+}
+
+.btn-premium {
+  background-color: var(--gold-primary);
+  color: var(--bg-primary);
+  border-color: var(--gold-primary);
+  font-weight: var(--fw-semibold);
+}
+
+.btn-premium:hover {
+  background-color: var(--gold-secondary);
+  border-color: var(--gold-secondary);
+  color: var(--bg-primary);
+}
+
+.btn-disabled {
+  background-color: var(--surface);
+  color: var(--text-muted);
+  border-color: var(--border);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+/* Cards */
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.card:hover {
+  border-color: var(--brand-accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Domain Cards */
+.domain-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.domain-name {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.domain-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.domain-tech {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: var(--space-xs);
+  padding-top: var(--space-xs);
+  border-top: 1px solid var(--divider);
+}
+
+/* Initiative Cards */
+.initiative-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.initiative-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.initiative-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-md);
+  gap: var(--space-sm);
+  border-bottom: 1px solid var(--divider);
+  padding-bottom: var(--space-sm);
+}
+
+.initiative-title {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+.initiative-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.initiative-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  flex-grow: 1;
+  margin-bottom: var(--space-md);
+}
+
+.initiative-context {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.initiative-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  color: var(--gold-primary);
+  font-weight: var(--fw-medium);
+}
+
+.initiative-text {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.initiative-footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  border-top: 1px solid var(--divider);
+  padding-top: var(--space-md);
+}
+
+.initiative-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.initiative-tech {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Research Cards */
+.research-grid {
+  gap: var(--space-md);
+}
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.research-topic {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.research-matter {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.research-application {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--brand-accent);
+  margin-top: var(--space-xs);
+  padding-top: var(--space-xs);
+  border-top: 1px solid var(--divider);
+}
+
+/* Writing Previews */
+.writing-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.writing-preview {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.writing-preview:hover {
+  border-color: var(--brand-accent);
+  transform: translateX(4px);
+}
+
+.writing-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  color: var(--gold-primary);
+  font-weight: var(--fw-medium);
+}
+
+.writing-title {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.writing-date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Timeline Preview */
+.timeline-preview {
+  position: relative;
+  padding-left: var(--space-md);
+  border-left: 2px solid var(--divider);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: calc(-1 * var(--space-md) - 7px);
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--bg-primary);
+  border: 2px solid var(--brand-accent);
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.timeline-period {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-muted);
+}
+
+.timeline-title {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+}
+
+.timeline-summary {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Contact Cards */
+.contact-grid {
+  gap: var(--space-md);
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-decoration: none;
+}
+
+.contact-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-muted);
+  font-weight: var(--fw-medium);
+}
+
+.contact-value {
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: var(--fw-medium);
+  word-break: break-all;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: var(--fw-medium);
+  border-radius: var(--radius-full);
+  border: 1px solid currentColor;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.status-research { color: var(--status-research); background: rgba(59, 130, 246, 0.1); }
+.status-architecture { color: var(--status-architecture); background: rgba(199, 154, 45, 0.1); }
+.status-prototype { color: var(--status-prototype); background: rgba(139, 92, 246, 0.1); }
+.status-mvp { color: var(--status-mvp); background: rgba(245, 158, 11, 0.1); }
+.status-active { color: var(--status-active); background: rgba(30, 122, 105, 0.1); }
+.status-beta { color: var(--status-beta); background: rgba(6, 182, 212, 0.1); }
+.status-production { color: var(--status-production); background: rgba(34, 197, 94, 0.1); }
+.status-maintenance { color: var(--status-maintenance); background: rgba(100, 116, 139, 0.1); }
+.status-archived { color: var(--status-archived); background: rgba(71, 85, 105, 0.1); }
+
+/* Footer Components */
+.footer-link {
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--brand-accent);
+}
+
+.footer-name {
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.footer-role {
+  color: var(--brand-accent);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-mission {
+  max-width: 400px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.footer-statement {
+  margin-top: var(--space-md);
+  font-size: 0.85rem;
+  color: var(--text-disabled);
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+/* Icons */
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5;
+  flex-shrink: 0;
+}
+```
+
+---
+
+### 2. `css/layout.css`
+
+**Summary of modifications:**
+- **Sticky Footer Architecture:** Replaced `main { min-height: 100vh; }` with the robust `body { display: flex; flex-direction: column; min-height: 100vh; }` and `main { flex: 1; }` pattern.
+- **Vertical Rhythm:** Added `section p:last-child { margin-bottom: 0; }` to tighten the transition to section ends.
+- Kept hero grid, footer margin, and footer links flex-wrap.
+
+```css
+/* =========================================
+   LAYOUT & GRID
+   ========================================= */
+
+/* Sticky Footer Architecture */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+section {
+  padding: var(--space-2xl) 0;
+  border-bottom: 1px solid var(--divider);
+}
+
+section:first-of-type {
+  padding-top: var(--space-xl);
+}
+
+/* Improve vertical rhythm inside sections */
+section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Grid Systems */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+/* Hero Layout */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  object-fit: cover;
+  box-shadow: var(--shadow-md);
+}
+
+/* Footer Layout */
+.footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: var(--space-xl) 0;
+  margin-top: var(--space-2xl);
+}
+
+.footer-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  section {
+    padding: var(--space-xl) 0;
+  }
+}
+
+/* Accessibility: Focus States */
+:focus-visible {
+  outline: 2px solid var(--gold-primary);
+  outline-offset: 4px;
+  border-radius: var(--radius-sm);
+}
+```
+
+---
+
+### 3. `css/animations.css`
+
+**Summary of modifications:**
+- Approved completely. Kept the stagger animation for grid layouts exactly as requested.
+
+```css
 /* =========================================
    ANIMATIONS
    ========================================= */
@@ -23,6 +706,15 @@
   transform: translateY(0);
 }
 
+/* Stagger Effect for Grid Items */
+.grid-2 .reveal:nth-child(2),
+.grid-3 .reveal:nth-child(2) { transition-delay: 0.1s; }
+.grid-2 .reveal:nth-child(3),
+.grid-3 .reveal:nth-child(3) { transition-delay: 0.2s; }
+.grid-3 .reveal:nth-child(4) { transition-delay: 0.1s; }
+.grid-3 .reveal:nth-child(5) { transition-delay: 0.2s; }
+.grid-3 .reveal:nth-child(6) { transition-delay: 0.3s; }
+
 /* Accessibility: Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   .reveal {
@@ -38,3 +730,4 @@
     scroll-behavior: auto !important;
   }
 }
+```
