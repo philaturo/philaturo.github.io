@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>MeshGuard | Phil Aturo | Engineering Initiative</title>
+  <meta name="description" content="MeshGuard is an open-source coordination platform for resilient Bitcoin infrastructure, focused on deterministic operations, recoverability, and infrastructure-agnostic workflow coordination.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://philaturo.github.io/initiatives/meshguard.html">
+
+  <!-- Theme Color & Icons -->
+  <meta name="theme-color" content="#0B1220">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://philaturo.github.io/initiatives/meshguard.html">
+  <meta property="og:title" content="MeshGuard | Phil Aturo">
+  <meta property="og:description" content="An open-source coordination platform for resilient Bitcoin infrastructure built around deterministic workflow coordination and infrastructure-agnostic design.">
+  <meta property="og:image" content="https://philaturo.github.io/assets/images/social/social-preview.png">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://philaturo.github.io/initiatives/meshguard.html">
+  <meta name="twitter:title" content="MeshGuard | Phil Aturo">
+  <meta name="twitter:description" content="An open-source coordination platform for resilient Bitcoin infrastructure.">
+  <meta name="twitter:image" content="https://philaturo.github.io/assets/images/social/social-preview.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/pages/initiative.css">
+</head>
+<body>
+
+  <!-- Dynamic Navigation Mount -->
+  <header id="nav-mount"></header>
+
+  <main>
+
+    <section id="initiative-header">
+      <div class="container">
+        <a href="../work.html" class="back-link reveal">&larr; Back to All Work</a>
+
+        <div class="initiative-hero reveal">
+          <h1>MeshGuard</h1>
+
+          <div class="initiative-meta">
+            <span class="status-badge status-architecture">Active Development</span>
+            <span class="initiative-domains">
+              Bitcoin Infrastructure · Distributed Systems · DevSecOps
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview">
+      <div class="container">
+        <h2 class="section-title reveal">Project Overview</h2>
+
+        <div class="reveal">
+          <p>
+            MeshGuard is an open-source coordination platform for resilient Bitcoin infrastructure.
+            It focuses on deterministic operational workflows, infrastructure coordination, and
+            recoverable execution across heterogeneous Bitcoin environments while remaining
+            infrastructure agnostic.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenge">
+      <div class="container">
+        <h2 class="section-title reveal">Engineering Challenge</h2>
+
+        <div class="reveal">
+          <p>
+            Modern Bitcoin infrastructure often relies on independent services operating across
+            multiple environments. MeshGuard explores how deterministic coordination,
+            recoverable execution, and operational consistency can improve infrastructure
+            resilience without coupling applications to specific implementations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <div class="container">
+        <h2 class="section-title reveal">Architecture Overview</h2>
+
+        <div class="reveal">
+          <p>
+            MeshGuard adopts a specification-first engineering approach centred on deterministic
+            coordination, event-oriented workflows, and infrastructure-independent execution.
+            The platform is designed to support operational coordination across Bitcoin
+            infrastructure while maintaining clear separation between coordination logic and
+            infrastructure integrations.
+          </p>
+
+          <div class="architecture-placeholder">
+            <span>Technical Architecture Available in Project Specifications</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="progress">
+      <div class="container">
+        <h2 class="section-title reveal">Current Progress</h2>
+
+        <div class="reveal">
+          <ul class="focus-list">
+            <li>Completed technical whitepaper and engineering specifications</li>
+            <li>Implemented the MeshGuard Core coordination engine</li>
+            <li>Building infrastructure driver framework and runtime abstractions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="current-focus">
+      <div class="container">
+        <h2 class="section-title reveal">Current Focus</h2>
+
+        <div class="reveal">
+          <p>
+            Developing production-ready infrastructure drivers beginning with Bitcoin Core,
+            validating deterministic coordination against real infrastructure, and expanding the
+            platform through rigorous engineering, testing, and documentation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="container">
+        <h2 class="section-title reveal">Roadmap</h2>
+
+        <div class="reveal">
+          <ul class="focus-list">
+            <li>Bitcoin Core Driver</li>
+            <li>Deterministic Regtest Validation</li>
+            <li>Lightning Driver Integrations</li>
+            <li>Production Hardening & Security Review</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="technologies">
+      <div class="container">
+        <h2 class="section-title reveal">Technologies</h2>
+
+        <div class="reveal">
+
+          <div class="tech-group">
+            <span class="initiative-label">Language</span>
+            <span class="initiative-tech">Go (Golang)</span>
+          </div>
+
+          <div class="tech-group">
+            <span class="initiative-label">Infrastructure</span>
+            <span class="initiative-tech">Linux · Docker · Git</span>
+          </div>
+
+          <div class="tech-group">
+            <span class="initiative-label">Target Ecosystem</span>
+            <span class="initiative-tech">Bitcoin Core · Lightning Network</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="repository">
+      <div class="container">
+        <h2 class="section-title reveal">Repository</h2>
+
+        <div class="reveal">
+          <a
+            href="https://github.com/PhilAturo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary">
+            View Source Code
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Dynamic Footer Mount -->
+  <footer id="footer-mount"></footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script type="module" src="../js/app.js"></script>
+
+</body>
+</html>
